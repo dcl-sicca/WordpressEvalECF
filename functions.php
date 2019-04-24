@@ -131,4 +131,16 @@ function my_single_template()
 // initialisation des filtres
 add_filter( "single_template", "my_single_template" );
 
+// function add_search_box($items, $args) {
+
+//     ob_start();
+//     get_search_form();
+//     $searchform = ob_get_contents();
+//     ob_end_clean();
+
+//     $items .= '<li>' . $searchform . '</li>'; 
+//     return $items;
+// }
+// add_filter('wp_nav_menu_items','add_search_box', 10, 2);
+
 ?>

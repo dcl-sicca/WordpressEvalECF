@@ -1,3 +1,4 @@
+<!-- Appel le header de wordpress -->
 <?php get_header(); ?>
 
 <article class="col-md-9">
@@ -15,5 +16,5 @@
 
 
         </article>
-
+<!-- Appel le footer de wordpress -->
 <?php get_footer(); ?>

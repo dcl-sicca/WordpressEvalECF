@@ -46,9 +46,18 @@
                 </li>
             </ul>
 
-        <form class="form-inline my-2 my-md-0">
-            <input class="form-control" type="text" placeholder="Search" aria-label="Search">
+        <!-- <form class="form-inline my-2 my-md-0" method="GET" action="<?php echo get_site_url(); ?>">
+            <input class="form-control" type="text" placeholder="Rechercher" aria-label="Search" value="<?php the_search_query(); ?>" name="s" id="q">
+            <button type="submit" title="Rechercher sur le site"><i class="fa fa-search"></i></button>
+        </form> -->
+
+        <form class="form-inline my-2 my-md-0" method="GET" action="<?php echo get_site_url(); ?>">
+        
+            <input type="search" class="form-control" placeholder="Recherche" value="<?php the_search_query(); ?>" name="s" id="q">
+            &nbsp;<button type="submit" class="btn btn-primary btn-sm"><i class="fa fa-search"></i> Chercher</button>
+
         </form>
+
         </div>
     </nav>
 
